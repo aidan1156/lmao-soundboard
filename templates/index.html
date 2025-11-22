@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Transcription</title>
+    <link rel="stylesheet" href="static/transcribe.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Speech Transcription</h1>
+            <p class="subtitle">Real-time voice-to-text</p>
+        </header>
+        
+        <main>
+            <div class="control-section">
+                <button id="toggleButton" class="toggle-button" aria-label="Start listening">
+                    <span class="button-icon">🎤</span>
+                    <span class="button-text">Start Listening</span>
+                </button>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Ready</span>
+                </div>
+            </div>
+            
+            <div class="transcription-section">
+                <h2>Transcription</h2>
+                <div id="transcriptionDisplay" class="transcription-display">
+                    <p class="placeholder">Press "Start Listening" to begin transcription...</p>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <p class="info-text">
+                    <span class="info-icon">ℹ️</span>
+                    Make sure to allow microphone access when prompted
+                </p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="static/transcribe.js"></script>
+</body>
+</html>
