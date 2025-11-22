@@ -74,5 +74,9 @@
     {
         "description": "redeem",
         "name": "do_not_redeem.wav"
+    },
+    {
+        "description": "six seven",
+        "name": "67.wav"
     }
 ]
