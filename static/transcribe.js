@@ -108,12 +108,13 @@ recognition.onresult = (event) => {
             });
             finalTranscript += transcript + ' ';
         } else {
+            // console.log('Interim transcript:', interim +' ' +transcript);
             fetch('/log-sentence', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ sentence: interim })
+                body: JSON.stringify({ sentence: interim + transcript })
             });
             interim += transcript;
         }
