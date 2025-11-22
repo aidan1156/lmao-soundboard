@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, redirect,make_response, send_from_directory
 import os
 import json
-import embed
+import soundboard
 
 main_dir = os.path.dirname(os.path.realpath(__file__))
 
 app = Flask(__name__,static_url_path='/static')
 app.config['PREFERRED_URL_SCHEME'] = 'https:'
 
-soundboard = embed.Soundboard()
+soundboard = soundboard.Soundboard()
 
 
 @app.route('/',methods=['GET','POST'])
