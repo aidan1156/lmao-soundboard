@@ -1,6 +1,70 @@
 [
     {
-        "description": "sad",
+        "description": "angry, frustration, rage, annoyed, irritated, furious, mad, upset,",
+        "name": "angry violin.wav"
+    },
+    {
+        "description": "bruh, bro, seriously, come on, really, disbelief, unimpressed, disappointed",
+        "name": "breh.wav"
+    },
+    {
+        "description": "dramatic, suspense, tension, shocking, intense, serious, ominous, important, revelation",
+        "name": "dramatic.wav"
+    },
+    {
+        "description": "eating, munching, nom nom, hungry, food, delicious, yummy, chewing, consuming",
+        "name": "eating.wav"
+    },
+    {
+        "description": "emotional damage, destroyed, roasted, burn, owned, devastating, brutal, savage, decimated",
+        "name": "emotional damage.wav"
+    },
+    {
+        "description": "oh my god, drama",
+        "name": "even more drama.wav"
+    },
+    {
+        "description": "noooo, fuck, failure, fail, mistake, wrong, error, oops, embarrassing, awkward, cringe",
+        "name": "fah.wav"
+    },
+    {
+        "description": "fart, gross, disgusting, poop, gas",
+        "name": "fart.wav"
+    },
+    {
+        "description": "flashbang, blinded, bright, explosion, sudden, bang",
+        "name": "flashbang.wav"
+    },
+    {
+        "description": "no way, absolutely not, nope, reject, refuse, decline, disagree, negative",
+        "name": "hell nah.wav"
+    },
+    {
+        "description": "huh, what, confused, unclear",
+        "name": "huh.wav"
+    },
+    {
+        "description": "laughter, laughing, funny, hilarious, joke, comedy, haha, lol, humor, amusing",
+        "name": "laughter.wav"
+    },
+    {
+        "description": "oof, ouch, pain, hurt, damage, hit, impact, rip, yikes",
+        "name": "oof.wav"
+    },
+    {
+        "description": "phone, call, telephone, ring, notification, alert, mobile, calling",
+        "name": "phone.wav"
+    },
+    {
+        "description": "siren, alarm, emergency, alert, warning, urgent, danger",
+        "name": "siren.wav"
+    },
+    {
+        "description": "walking, footsteps, steps, moving, approaching",
+        "name": "squidward walk.wav"
+    },
+    {
+        "description": "sad, disappointed, unfortunate, failure, depression",
         "name": "womp.wav"
     }
 ]
