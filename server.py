@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, redirect,make_response, send_from_directory
 import os
 import json
-import soundboard
+import soundboard as sb
 
 main_dir = os.path.dirname(os.path.realpath(__file__))
 
 app = Flask(__name__,static_url_path='/static')
 app.config['PREFERRED_URL_SCHEME'] = 'https:'
 
-soundboard = soundboard.Soundboard()
+soundboard = sb.Soundboard()
 
 
 @app.route('/',methods=['GET','POST'])
@@ -21,7 +21,7 @@ def log_sentence():
     sentence = data.get('sentence')
     print(f"Received sentence: {sentence}")
     if len(sentence.split(' ')) > 2:
-        soundboard.log_sentence(sentence)
+        soundboard.play_sound_for(sentence)
     return {'status': 'success'}, 200
 
 if __name__ == '__main__':
