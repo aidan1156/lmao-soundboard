@@ -76,7 +76,7 @@ class Soundboard:
     def play_sound_for(self, sentence: str):
         closest_index, closest_distance = self._get_sound_index(sentence)
         print(f"Closest distance: {closest_distance:.4f}")
-        if closest_distance > 1.19:
+        if closest_distance > 1.2:
             return
         if (self._last_played_index == closest_index and time.time() - self._last_played_at < 5):
             return
