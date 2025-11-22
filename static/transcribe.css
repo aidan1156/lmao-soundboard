@@ -8,18 +8,30 @@
 :root {
     --primary-color: #007AFF;
     --primary-hover: #0051D5;
-    --background: #F5F5F7;
-    --surface: #FFFFFF;
-    --text-primary: #1D1D1F;
-    --text-secondary: #6E6E73;
-    --border: #D2D2D7;
+    --background: #000000;
+    --surface: #1C1C1E;
+    --text-primary: #FFFFFF;
+    --text-secondary: #98989D;
+    --border: #38383A;
     --success: #34C759;
     --error: #FF3B30;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow: rgba(0, 0, 0, 0.3);
 }
 
+.sixtyfour {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+  }  
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Jura", sans-serif;
     background-color: var(--background);
     color: var(--text-primary);
     line-height: 1.5;
@@ -68,18 +80,19 @@ h1 {
 .toggle-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
-    padding: 16px 32px;
+    width: 180px;
+    height: 180px;
     background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 50%;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
-    min-width: 220px;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .toggle-button:hover {
@@ -101,11 +114,13 @@ h1 {
 }
 
 .button-icon {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
 }
 
 .button-text {
-    font-size: 1.1rem;
+    font-family: "Jura", sans-serif;
+    font-size: 1rem;
+    margin-top: 4px;
 }
 
 .status-indicator {
@@ -154,7 +169,7 @@ h1 {
 }
 
 .transcription-display {
-    background-color: var(--background);
+    background-color: #2C2C2E;
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
@@ -239,9 +254,13 @@ h1 {
     }
     
     .toggle-button {
-        min-width: 180px;
-        padding: 14px 24px;
+        width: 150px;
+        height: 150px;
         font-size: 1rem;
+    }
+    
+    .button-icon {
+        font-size: 2rem;
     }
     
     .transcription-display {
