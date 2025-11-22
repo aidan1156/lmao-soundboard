@@ -23,13 +23,13 @@ class Soundboard:
         self._sounds = [pygame.mixer.Sound("sounds/" + filename) for filename in map(lambda x: x['name'], sounds)]
         self._sound_names = [x['name'] for x in sounds]
         self._sound_descriptions = [x['description'] for x in sounds]
-        self._sound_lengths = [self.get_wav_duration("sounds/" + filename) for filename in map(lambda x: x['name'], sounds)]
-        self._sound_last_played = [0.0 for _ in self._sounds]
+        # self._sound_lengths = [self._get_wav_duration("sounds/" + filename) for filename in map(lambda x: x['name'], sounds)]
+        # self._sound_last_played = [0.0 for _ in self._sounds]
 
         self._last_played_index = None
         self._last_played_at = 0
 
-    def get_wav_duration(self, filename) -> float:
+    def _get_wav_duration(self, filename) -> float:
         """
         Calculates the duration of a WAV file in seconds.
         """
@@ -80,16 +80,12 @@ class Soundboard:
             return
         if (self._last_played_index == closest_index and time.time() - self._last_played_at < 5):
             return
-        if time.time() - self._sound_last_played[closest_index] < self._sound_lengths[closest_index] + 1:
-            return
         
         self._sounds[closest_index].play()
             
         print(f"Playing sound: {self._sound_names[closest_index]}")
         self._last_played_index = closest_index
         self._last_played_at = time.time()
-        closest_index = int(closest_index)
-        self._sound_last_played[closest_index] = time.time()
 
     
     def get_description_for(self, sentence: str) -> str:

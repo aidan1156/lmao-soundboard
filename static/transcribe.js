@@ -56,7 +56,7 @@ function startListening() {
         }
     } catch (error) {
         console.error('Error starting recognition:', error);
-        alert('Could not start microphone. Error: ' + error.message);
+        // alert('Could not start microphone. Error: ' + error.message);
     }
 }
 
